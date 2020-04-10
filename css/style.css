@@ -1,0 +1,426 @@
+/* start comment */
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+
+:root
+{
+    --mainYellow: #fdbe02;
+    --mainWhite: #fff;
+    --mainBlack: #071013;
+    --mainGrey: #9b9999;
+    --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body
+{
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Mali", cursive;
+}
+.text-slanted
+{
+    font-family: "Calligraffitti", cursive;
+}
+.text-yellow
+{
+    color: var(--mainYellow);
+}
+.btn-yellow
+{
+    background-color: var(--mainYellow);
+    color: var(--mainBlack);
+    font-size: 21px;
+    border-radius: 0;
+}
+.btn-yellow:hover
+{
+    background-color: var(--mainBlack);
+    color: var(--mainYellow);
+}
+/* end cooment */
+
+/* start navbar */
+.img-nav
+{
+    border-radius: 50%;
+    background-position: center;
+}
+.navbar-toggler
+{
+    outline: none !important;
+    border: none;
+    font-size: 36px;
+    color: var(--mainYellow) !important;
+}
+.nav-link
+{
+    font-size: 25px;
+    color: var(--mainWhite) !important;
+}
+.nav-link:hover
+{
+    color: var(--mainYellow) !important;
+}
+.underline
+{
+    border-bottom: 1px solid var(--mainYellow);
+}
+.navbar-icon
+{
+    font-size: 25px;
+    color: var(--mainYellow);
+}
+.nav-icon
+{
+    color: var(--mainYellow);
+}
+.nav-icon:hover
+{
+    color: var(--mainGrey);
+}
+/* end navbar */
+
+/* ___________ */
+
+/* start header */
+.min-height
+{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) , url(../img/pageBcg/bg2.png.jpg);
+    min-height: calc(100vh - 101px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* end header */
+
+/* ___________ */
+
+/* start services section */
+.service-icon
+{
+    background-color: var(--mainGrey);
+    color: var(--mainYellow);
+    padding: 8px;
+    font-size: 40px;
+}
+/* end services section */
+
+/* __________ */
+
+/* start categories section */
+.categories-link
+{
+    color: var(--mainBlack);
+    text-decoration: none !important;
+}
+.categories-link:hover
+{
+    color: var(--mainGrey);
+    text-decoration: none !important;
+}
+.categories-underline
+{
+    background-color: var(--mainYellow);
+    width: 5rem;
+    height: 2px;
+}
+.categories-img-container
+{
+    position: relative;
+}
+.category-img 
+{
+    transition: all 1s linear;
+}
+.categories-img-container:hover .category-img 
+{
+    opacity: 0.5;
+}
+.categories-link
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--mainWhite);
+    padding: 0.2rem 3rem 0.2rem 0.2rem;
+    color: var(--mainBlack);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    transition: all 1s linear;
+    text-decoration: none !important;
+    opacity: 0;
+}
+.categories-img-container:hover .categories-link
+{
+    opacity: 1;
+}
+/* end categories section */
+
+/* _________ */
+
+/* start collection section */
+.collection-min-height
+{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) , url(../img/pageBcg/bg2.png.jpg);
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.collection-link
+{
+    text-decoration: none !important;
+}
+.collection-link:hover
+{
+    text-decoration: none !important;
+    color: var(--mainWhite);
+}
+.collection-underline
+{
+    height: 0.1rem;
+    width: 5rem;
+    background-color: var(--mainYellow);
+    margin: 0 auto;
+}
+/* end collection section */
+
+/* ________ */
+
+/* start featured section */
+.featured-title
+{
+    background-color: var(--mainYellow);
+    padding: 5px 40px;
+    clip-path: polygon(10% 0%, 100% 0%, 89% 100%, 0% 100%);
+    color: var(--mainWhite);
+}
+.featured-img-container
+{
+    background-color: var(--TransGrey);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.featured-img
+{
+    width: 100%;
+    height: 100%;
+}
+.featured-search-icon
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 2px 7px; 
+    background-color: var(--mainWhite);
+    font-size: 15px;
+    transform: translateX(100%);
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+}
+.featured-img-container:hover .featured-search-icon
+{
+    transform: translateX(0);
+}
+.featured-link
+{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    padding: 2px 7px; 
+    background-color: var(--mainYellow);
+    color: var(--mainBlack);
+    transform: translateX(100%);
+    font-size: 15px;
+    transition: all .8s ease-in-out;
+}
+.featured-img-container:hover .featured-link
+{
+    transform: translateX(0);
+    color: var(--mainBlack);
+}
+.old-price
+{
+    text-decoration: line-through;
+    color: var(--mainGrey);
+}
+/* end featured section */
+
+/* ___________ */
+
+/* start carousal section */
+.carousal
+{
+    background-color: #38393a;
+}
+.carousel-control-prev
+{
+    transform: translateX(-200%);
+    color: var(--mainYellow);
+    font-size: 40px;
+}
+.carousel-control-next
+{
+    transform: translateX(200%);
+    color: var(--mainYellow);
+    font-size: 40px;
+}
+/* end carousal section */
+
+/* __________ */
+
+/* start skills section */
+.skills
+{
+    background-color: rgb(7, 16, 19);
+}
+.skills-icon
+{
+    color: var(--mainYellow);
+    font-size: 30px;
+}
+/* end skills section */
+
+/* _________ */
+
+/* start footer */
+.footer
+{
+    background-color: rgb(56, 56, 56);
+}
+.footer-title
+{
+    border: 3px solid var(--mainYellow);
+    padding:  6px;
+}
+.footer-icon
+{
+    color: var(--mainYellow);
+}
+.footer-icon:hover
+{
+    color: var(--mainWhite);
+}
+/* end footer */
+
+/* ________ */
+
+/* ******************{start-products}******************** */
+.min__height
+{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/pageBcg/bg-products.jpg);
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.categories-products-underline
+{
+    height: 0.2rem;
+    width: 5rem;
+    background: var(--mainYellow);
+}
+.categories-products-link
+{
+    color: var(--mainBlack);
+    text-decoration: none !important;
+}
+.categories-products-link:hover
+{
+    color: var(--mainGrey);
+    text-decoration: none !important;
+}
+/* ******************{end-products}******************** */
+
+/* start categories-products */
+.products-color
+{
+    width: 15px;
+    height: 15px;
+    /* padding: 8px; */
+}
+.products-color-black
+{
+    background-color: #000;
+}
+.products-color-red
+{
+    background-color: #f00;
+}
+.products-color-yellow
+{
+    background-color: yellow;
+}
+.products-color-blue
+{
+    background-color: #00f;
+}
+.products-color-green
+{
+    background-color: #080;
+}
+/* end categories-products */
+
+/* _______ */
+
+/* *****************{categories-single-product}****************** */
+.min___height
+{
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../img/pageBcg/bg-sin.jpg);
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.single-product-photo
+{
+    background-color: var(--TransGrey);
+    opacity: .5;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .3s linear;
+}
+.single-product-photo:hover
+{
+    border-color: var(--mainYellow);
+    opacity: 1;
+}
+.star-icon
+{
+    color: var(--mainYellow);
+}
+.btn-black {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--mainBlack);
+    border-radius: 0 !important;
+    border: 0.1rem solid var(--mainBlack);
+}
+.btn-black:hover {
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+}
+.product-info-link 
+{
+    color: var(--mainGrey);
+    text-decoration: none !important;
+}
+.product-info-link:hover 
+{
+    color: var(--mainYellow);
+}
+/* *****************{categories-single-product}****************** */
+/* *****************{store}**************** */
+.min____height
+{
+    background-image: linear-gradient(rgba(83, 82, 82, 0.4),rgba(83, 82, 82, 0.4)), url(../img/pageBcg/bg-store.jpg);
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/****************{End}****************/
